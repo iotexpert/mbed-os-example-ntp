@@ -15,3 +15,5 @@ To use the program
 * mbed import https://github.com/iotexpert/mbed-os-example-ntp.git
 * cd mbed-os-example-ntp
 * mbed compile -m CY8CKIT_062_WIFI_BT -t GCC_ARM -f
+
+You can read about how this code works at https://iotexpert.com/2019/09/23/mbed-os-cy8ckit_062s2_43012-segger-emwin-ntp/

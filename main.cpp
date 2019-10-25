@@ -4,9 +4,6 @@
 #include "ntp-client/NTPClient.h"
 
 
-#define WIFI_SSID "CYFI_IOT_EXT"
-#define WIFI_PASSWORD "cypresswicedwifi101"
-
 Thread netTimeThreadHandle;
 WiFiInterface *wifi;
 EventQueue *displayQueue;
@@ -132,7 +129,7 @@ int main()
     {
       wifiConnectionAttempts = 1;
       do {
-	ret = wifi->connect(WIFI_SSID, WIFI_PASSWORD, NSAPI_SECURITY_WPA_WPA2);
+	ret = wifi->connect(MBED_CONF_APP_WIFI_SSID, MBED_CONF_APP_WIFI_PASSWORD, NSAPI_SECURITY_WPA_WPA2);
 	displayQueue->call(updateDisplayWiFiConnectAttempts,wifiConnectionAttempts);
 	if (ret != 0) {
 	  wifiConnectionAttempts += 1;

@@ -12,6 +12,6 @@ The Screen displays the connection information and the time.
 
 To use the program
 
-mbed import https://github.com/iotexpert/mbed-os-example-ntp.git
-cd mbed-os-example-ntp
-mbed compile -m CY8CKIT_062_WIFI_BT -t GCC_ARM -f
+* mbed import https://github.com/iotexpert/mbed-os-example-ntp.git
+* cd mbed-os-example-ntp
+* mbed compile -m CY8CKIT_062_WIFI_BT -t GCC_ARM -f
